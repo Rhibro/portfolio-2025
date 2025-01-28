@@ -39,6 +39,13 @@ h1 {
   font-size: 70px;
 }
 
+h2 {
+  font-family: 'Roboto Mono', monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+}
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;

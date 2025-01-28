@@ -9,6 +9,7 @@ function App() {
   return (
     <>
       <h1>Rhiannon Brönnimann</h1>
+      <h2>Full Stack Developer</h2>
       <img src={game} height={230} width={230} className="img-fluid About" />
       <img src={notebook} height={230} width={230} className="img-fluid Education" />
       <img src={briefcase} height={230} width={230} className="img-fluid Portfolio" />
