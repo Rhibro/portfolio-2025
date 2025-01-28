@@ -1,10 +1,18 @@
 import './App.css'
+import game from "./assets/game.svg";
+import notebook from "./assets/notebook.svg";
+import briefcase from "./assets/briefcase.svg";
+import chat from "./assets/chat.svg";
 
 function App() {
 
   return (
     <>
-      <p>Hello!</p>
+      <h1>Rhiannon Brönnimann</h1>
+      <img src={game} height={230} width={230} className="img-fluid About" />
+      <img src={notebook} height={230} width={230} className="img-fluid Education" />
+      <img src={briefcase} height={230} width={230} className="img-fluid Portfolio" />
+      <img src={chat} height={230} width={230} className="img-fluid Contact" />
     </>
   )
 }
