@@ -178,6 +178,96 @@ li {
   text-align: center;
 }
 
+/* education styles */
+
+/* Education Styles */
+
+.eduBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.education {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 92px;
+  text-align: center;
+  color: #000000;
+}
+
+.eduInfoBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+
+.eduBox {
+  background: #FAC546;
+  border: 5px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  margin: .5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 500px;
+  min-height: 500px;
+
+}
+
+/* .schoolName {
+  text-decoration: underline solid 5px #E24F32;
+} */
+
+.timePlace {
+  font-family: 'Roboto Mono';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  color: #000000;
+}
+
+.eduInfo {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  color: #000000;
+  margin: .5rem;
+  padding: .5rem;
+  border-radius: 20px;
+  background-color: #ffffff8f;
+  max-width: 800px;
+  border: solid 5px #E24F32;
+}
+
+.schoolLink {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  color: #000000;
+  margin: 2rem;
+}
+
+/* .schoolLink:hover {
+  color: #E24F32;
+} */
+
+
 /* Responsiveness */
 
 @media screen and (max-width: 568px) {
