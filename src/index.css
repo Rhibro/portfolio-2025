@@ -109,8 +109,9 @@ li {
 /* Footer styles */
 
 .footer {
-  position: absolute;
+  position: fixed;
   bottom: .5rem;
+  /* left: 30%; */
   display: flex;
   justify-content: center;
   align-items: center;
