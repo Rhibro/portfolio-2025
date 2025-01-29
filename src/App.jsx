@@ -1,21 +1,20 @@
 import './App.css'
-import game from "./assets/game.svg";
-import notebook from "./assets/notebook.svg";
-import briefcase from "./assets/briefcase.svg";
-import chat from "./assets/chat.svg";
+// import React from 'react';
+import {RouterProvider} from "react-router-dom";
+import router from './router/router';
+// import Home from './components/home/Home';
+// import Education from './components/education/Education';
+// import About from './components/about/About';
+// import Portfolio from './components/portfolio/Portfolio';
+// import Contact from './components/contact/Contact';
+
+
 
 function App() {
 
   return (
-    <>
-      <h1>Rhiannon Brönnimann</h1>
-      <h2>Full Stack Developer</h2>
-      <img src={game} height={230} width={230} className="img-fluid About" />
-      <img src={notebook} height={230} width={230} className="img-fluid Education" />
-      <img src={briefcase} height={230} width={230} className="img-fluid Portfolio" />
-      <img src={chat} height={230} width={230} className="img-fluid Contact" />
-    </>
+    <RouterProvider router={router}/>
   )
 }
 
-export default App
+export default App;

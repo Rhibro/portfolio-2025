@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
+/* universal styles */
+
 :root {
-  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
   line-height: 1.5;
   font-weight: 400;
 
@@ -16,12 +17,11 @@
 }
 
 a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+  text-decoration: none;
+  color: black;
 }
 a:hover {
-  color: #535bf2;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.45);
 }
 
 body {
@@ -30,6 +30,13 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 h1 {
@@ -44,6 +51,13 @@ h2 {
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
+}
+
+h3 {
+  font-family: 'Roboto Mono', monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
 }
 
 button {
@@ -65,15 +79,63 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+/* Header styles */
+
+.headerNav {
+  position: fixed;
+  top: .5rem;
+  left: .5rem;
+}
+
+ul  {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Roboto Mono', monospace;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 20px;
+}
+
+li {
+  text-decoration: none;
+  list-style-type: none;
+  padding: .5rem;
+}
+
+.liLink {
+  color: black;
+}
+
+/* Footer styles */
+
+.footer {
+  position: absolute;
+  bottom: .5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.footerText {
+  font-family: 'Roboto Mono', monospace;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 30px;
+  margin-right: 1rem;
+}
+
+.footerImg {
+  margin: .2rem;
+}
+
+/* Responsiveness */
+
+@media screen and (max-width: 568px) {
+
+  ul {
+    font-size: 15px;
   }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+
 }
