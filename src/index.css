@@ -60,7 +60,7 @@ h3 {
   font-size: 35px;
 }
 
-button {
+/* button {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
@@ -77,7 +77,7 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
+} */
 
 /* Header styles */
 
@@ -266,6 +266,214 @@ li {
 /* .schoolLink:hover {
   color: #E24F32;
 } */
+
+/* Form Styles */
+
+.myForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #6FB0BE;
+  border: 5px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  height: auto;
+  width: auto;
+  padding: 4rem;
+}
+
+.labelInput {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  color: black;
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 46px;
+  margin-bottom: 1rem; 
+  width: 100%;
+
+}
+
+.inPut {
+  background-color: #F2E5CA;
+  border: 5px solid #000000;
+  color: black;
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  height: 7vh;
+  width: auto;
+}
+
+.inPut:hover {
+  background-color:#bcd6db;
+  transition-duration: .1s;
+}
+
+.textArea {
+  background-color: #F2E5CA;
+  border: 5px solid #000000;
+  height: 20vh;
+  width: auto;
+  color: black;
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.textArea:hover {
+  background-color:#bcd6db;
+  transition-duration: .1s;
+}
+
+.formBtn {
+  background-color: #F2E5CA;
+  border: 5px solid #000000;
+  width: 200px;
+  height: 75px;
+  font-family: 'Roboto Mono';
+  font-style: bold;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 40px;
+  text-align: center;
+  color: black;
+  align-self: center;
+  border-radius: 20px;
+  margin-top: 1rem;
+}
+
+.formBtn:hover {
+  background-color:#bcd6db;
+  color:  black;
+  transition-duration: .1s;
+}
+
+.socialGroup {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 1rem;
+}
+
+.social {
+  color: #000000;
+  height: 80px;
+  width: 80px;
+}
+
+.socialBtnOne:hover {
+  filter: drop-shadow(0px 4px 4px rgba(242, 229, 202, 100));
+  transition-duration: .1s;
+}
+
+.socialBtnTwo:hover {
+  filter: drop-shadow(0px 4px 4px rgba(242, 229, 202, 100));
+  transition-duration: .1s;
+}
+
+/* Portfolio Styles */
+
+.portBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.portTitleBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 2rem;
+  align-self: flex-start;
+}
+
+.portfolio {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 92px;
+  text-align: center;
+  color: #000000;
+}
+
+.portInfoBox {
+display: flex;
+/* flex-direction: row; */
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+margin: 2rem;
+}
+
+.portBox {
+background: #C89005;
+border: 5px solid #000000;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 20px;
+margin: .5rem;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+max-width: 400px;
+
+}
+
+.webEx {
+width: 335px;
+height: 205px;
+margin: .8rem;
+margin-top: 2rem;
+border: 2px solid black;
+border-radius: 5%;
+}
+
+.content {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+.projectName {
+font-family: 'Roboto Mono';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 35px;
+text-align: center;
+color: #000000;
+margin: .8rem;
+}
+
+.portInfo {
+font-family: 'Roboto Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 17px; 
+line-height: 23px;
+text-align: center;
+color: #000000;
+margin-bottom: 1.3rem;
+margin-left: 1.3rem;
+margin-right: 1.3rem;
+background-color: #ffffff68;
+border-radius: 20px;
+}
 
 
 /* Responsiveness */

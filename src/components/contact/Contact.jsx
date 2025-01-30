@@ -1,11 +1,13 @@
 import Header from "../header/Header";
 import Footer from "../footer/Footer";
+import Form from "./Form";
 
 export default function Contact() {
     return (
         <>
         <Header />
         <h1>Contact</h1>
+        <Form />
         <Footer />
         </>
     )

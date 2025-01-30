@@ -1,5 +1,7 @@
 import Header from "../header/Header";
 import Footer from "../footer/Footer";
+import PortDataComponent from "./PortDataComponent";
+import { PortData } from "./PortData";
 
 
 export default function Portfolio() {
@@ -7,6 +9,9 @@ export default function Portfolio() {
         <>
         <Header />
         <h1>Portfolio</h1>
+        <div className="portInfoBox">
+            {PortData.map((portItem) => <PortDataComponent key={portItem.pageLink} {...portItem}/>)}
+        </div>
         <Footer />
         </>
     )
