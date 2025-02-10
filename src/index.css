@@ -135,6 +135,11 @@ li {
   margin: .2rem;
 }
 
+.footerImg:hover {
+  filter: drop-shadow(0px 4px 4px rgb(50, 57, 61));
+  transition-duration: .1s;
+}
+
 /* about styles */
 
 .aboutBody {
@@ -373,12 +378,12 @@ label {
 }
 
 .socialBtnOne:hover {
-  filter: drop-shadow(0px 4px 4px rgba(242, 229, 202, 100));
+  filter: drop-shadow(0px 4px 4px rgb(50, 57, 61));
   transition-duration: .1s;
 }
 
 .socialBtnTwo:hover {
-  filter: drop-shadow(0px 4px 4px rgba(242, 229, 202, 100));
+  filter: drop-shadow(0px 4px 4px rgb(50, 57, 61));
   transition-duration: .1s;
 }
 
