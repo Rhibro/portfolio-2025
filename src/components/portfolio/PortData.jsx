@@ -1,4 +1,5 @@
 import tripPlanner from "../../assets/tripPlanner.png";
+import movieSelector from "../../assets/movie-selector-home.png";
 
 export const PortData = [
     {
@@ -10,16 +11,9 @@ export const PortData = [
     },
     {
         pageLink: '',
-        image: tripPlanner,
+        image: movieSelector,
         projectName: 'movie-selector',
         projectInfo:
             '"The Movie Selector" is a dynamic web application that allows users to explore movies, search by title, filter by genre, and view detailed information about each movie. The project is powered by The Movie Database (TMDb) API and emphasizes asynchronous operations, user experience, and responsive design.',
-    },
-    {
-        pageLink: '',
-        image: tripPlanner,
-        projectName: 'project-name',
-        projectInfo:
-            'Blah blah blah blah...',
     },
 ];
