@@ -5,8 +5,6 @@ import Education from '../components/education/Education';
 import Portfolio from '../components/portfolio/Portfolio';
 import Contact from '../components/contact/Contact';
 
-
-
 const router = createBrowserRouter([
     {
         path: '/',

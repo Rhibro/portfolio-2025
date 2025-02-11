@@ -2,7 +2,7 @@ export default function PortDataComponent({ pageLink, image, projectName, projec
     return (
         <div className="portBox">
             <div>
-            <a href={pageLink}>       
+            <a href={pageLink} target="_blank">       
             <img className="webEx" src={image} />
             </a>     
             </div>
