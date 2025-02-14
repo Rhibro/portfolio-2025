@@ -71,6 +71,7 @@ h3 {
   left: 0;
   width: 100%;
   background-color: #EBE6DD;
+  box-sizing: border-box;
 }
 
 ul  {
@@ -80,6 +81,7 @@ ul  {
   font-style: normal;
   font-weight: 200;
   font-size: 20px;
+  list-style-type: none;
 }
 
 li {
@@ -91,6 +93,8 @@ li {
 .liLink {
   color: black;
 }
+
+
 
 /* Footer styles */
 
@@ -104,6 +108,7 @@ li {
   align-items: center;
   flex-direction: row;
   background-color: #EBE6DD;
+  box-sizing: border-box; 
 }
 
 .footerText {
@@ -133,6 +138,7 @@ li {
   flex-direction: column;
   width: 100%;
   height: 100%;
+  box-sizing: border-box; 
  }
 
 .aboutInfoBox {
@@ -167,8 +173,6 @@ li {
   text-align: center;
 }
 
-/* education styles */
-
 /* Education Styles */
 
 .eduBody {
@@ -176,6 +180,7 @@ li {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  box-sizing: border-box; 
 }
 
 .education {
@@ -248,7 +253,8 @@ li {
   line-height: 26px;
   text-align: center;
   color: #000000;
-  margin: 2rem;
+  /* margin-bottom: 2rem; */
+  padding: .5rem;
 }
 
 /* .schoolLink:hover {
@@ -377,6 +383,7 @@ label {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  box-sizing: border-box; 
 }
 
 .portTitleBox {
