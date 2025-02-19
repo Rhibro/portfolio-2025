@@ -37,7 +37,9 @@ const Form = () => {
         e.preventDefault();
 
         emailjs.send(
-            "service_ogqb47i",
+            "service_ogqb47i", //service ID
+            "", //email template
+            "", //emailjs user ID
         )
         .then (
             (response) => {
