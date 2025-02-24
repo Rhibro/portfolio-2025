@@ -2,21 +2,6 @@
 
 /* universal styles */
 
- :root {
-  /* line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(3, 3, 3, 0.87); */
-  background-color: #ebe6dd;
-
-  /* font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; */
-} 
-
-
 a {
   text-decoration: none;
   color: black;
@@ -25,14 +10,25 @@ a:hover {
   text-shadow: 2px 2px 2px rgba(0,0,0,0.45);
 }
 
-body {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+/* html {
+  overflow-x: hidden;
+} */
+
+body {
   display: flex;
   place-items: center;
-  min-width: 100%;
+  justify-content: center;
+  min-width: 100vw;
   min-height: 100vh;
   box-sizing: border-box;
+  background-color: #ebe6dd;
+
 }
 
 main {
@@ -102,13 +98,14 @@ li {
   position: relative; 
   bottom: 0;
   width: 100%;
-  margin-top: auto;
+  margin-top: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   background-color: #EBE6DD;
   box-sizing: border-box; 
+
 }
 
 .footerText {
@@ -129,6 +126,12 @@ li {
   transition-duration: .1s;
 }
 
+/* home styles */
+
+.homeBody {
+  padding: 3rem;
+}
+
 /* about styles */
 
 .aboutBody {
@@ -136,9 +139,11 @@ li {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   box-sizing: border-box; 
+  min-width: 300px;
+  margin-top: 4rem;
  }
 
 .aboutInfoBox {
@@ -150,7 +155,7 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* margin: 2rem; */
+  margin: .5rem;
   max-width: 500px;
 }
 
@@ -165,11 +170,11 @@ li {
 .aboutInfo {
   font-family: 'Roboto Mono';
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1.2rem;
   line-height: 33px;
   color: #000000;
-  margin: 1.5rem;
+  margin: 1rem;
   text-align: center;
 }
 
@@ -181,6 +186,8 @@ li {
   align-items: center;
   flex-direction: column;
   box-sizing: border-box; 
+  width: 100%;
+  margin-top: 4rem;
 }
 
 .education {
@@ -215,9 +222,6 @@ li {
 
 }
 
-/* .schoolName {
-  text-decoration: underline solid 5px #E24F32;
-} */
 
 .timePlace {
   font-family: 'Roboto Mono';
@@ -257,11 +261,17 @@ li {
   padding: .5rem;
 }
 
-/* .schoolLink:hover {
-  color: #E24F32;
-} */
-
 /* Form Styles */
+
+.contactBody {
+  margin-top: 4rem;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+}
 
 .myForm {
   display: flex;
@@ -273,14 +283,18 @@ li {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   height: auto;
-  width: auto;
-  padding: 2rem;
+  max-width: 700px;
+  padding: 1rem;
 }
 
-.labelInput {
-  display: flex;
-  flex-direction: column;
+.aboutMeimg {
+  width: 15rem;
+  height: 15rem;
+  border: 5px solid black;
+  border-radius: 50%;
+  margin-top: .5rem;
 }
+
 
 .contactInfoList {
   color: black;
@@ -336,7 +350,9 @@ li {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  box-sizing: border-box; 
+  box-sizing: border-box;
+  width: 100%; 
+  margin-top: 4rem;
 }
 
 .portTitleBox {
@@ -437,6 +453,175 @@ padding: .5rem;
     font-size: 15px;
   }
 
+  .footerText {
+    font-size: 11px;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  .homeTitle {
+    font-size: 35px;
+  }
 
 }
 
+@media screen and (max-width: 500px) {
+
+  ul {
+    font-size: 15px;
+    padding: .2rem;
+  }
+
+  .aboutInfo {
+    font-size: 20px;
+  }
+
+  .email{
+    font-size: 25px;
+  }
+
+  .formText{
+    font-size: 25px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .homeTitle {
+    font-size: 25px;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  .projectName {
+    font-size: 25px;
+  }
+
+  .webEx {
+    width: 250px;
+    height: 200px;
+    margin: .8rem;
+  }
+
+  .portInfo {
+    padding: .1rem;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+
+  ul {
+    font-size: 15px;
+  }
+
+  li {
+    padding: .3rem;
+  }
+
+  .aboutInfo {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .email{
+    font-size: 20px;
+  }
+
+  .formText{
+    font-size: 15px;
+  }
+
+  .social {
+    height: 50px;
+    width: 50px;
+  }
+
+  .homeBody {
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 390px) {
+
+  ul {
+    font-size: 15px;
+  }
+
+  li {
+    padding: .3rem;
+  }
+
+}
+
+/* Burger Menu Styles */
+.burger {
+  display: none; /* Hidden by default */
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 10; /* Ensure it is above other elements */
+  padding: 1rem;
+}
+
+.line {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 3px 0;
+  transition: 0.3s;
+}
+
+/* Menu Styles */
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Center the menu items */
+  width: 100%; /* Ensure the menu takes full width */
+}
+
+.menu.open {
+  display: flex; /* Show menu when open */
+}
+
+.menu li {
+  padding: 0.5rem 1rem; /* Add padding for menu items */
+}
+
+/* Media Queries */
+@media screen and (max-width: 500px) {
+  .burger {
+      display: flex; /* Show burger menu on small screens */
+  }
+
+  .menu {
+      display: none; /* Hide menu by default */
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 60px; /* Adjust based on header height */
+      left: 0;
+      background-color: #EBE6DD;
+      align-items: center; /* Center align items in the menu */
+      z-index: 5; /* Ensure it is above other elements */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+  }
+
+  .menu.open {
+      display: flex; /* Show menu when open */
+  }
+
+  .menu li {
+      padding: 1rem; /* Add padding for menu items */
+      text-align: center; /* Center align text */
+      width: 100%; /* Ensure menu items take full width */
+  }
+
+  .line.open {
+      background-color: #3c3d3d;; /* Change color when open */
+  }
+}

@@ -8,9 +8,11 @@ export default function Portfolio() {
     return (
         <>
         <Header />
-        <h1>Portfolio</h1>
-        <div className="portInfoBox">
-            {PortData.map((portItem) => <PortDataComponent key={portItem.pageLink} {...portItem}/>)}
+        <div className="portBody">
+            <h1>Portfolio</h1>
+            <div className="portInfoBox">
+                {PortData.map((portItem) => <PortDataComponent key={portItem.pageLink} {...portItem}/>)}
+            </div>
         </div>
         <Footer />
         </>

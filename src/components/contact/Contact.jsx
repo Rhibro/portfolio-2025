@@ -6,8 +6,10 @@ export default function Contact() {
     return (
         <>
         <Header />
-        <h1>Contact</h1>
-        <Form />
+        <div className="contactBody">
+            <h1>Contact</h1>
+            <Form />
+        </div>
         <Footer />
         </>
     )
