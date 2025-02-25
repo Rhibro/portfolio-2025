@@ -8,7 +8,7 @@ export const PortData = [
         image: movieSelector,
         projectName: 'movie-selector',
         projectInfo:
-            '"The Movie Selector" is a dynamic web application that allows users to explore movies, search by title, filter by genre, and view detailed information about each movie. The project is powered by The Movie Database (TMDb) API and emphasizes asynchronous operations, user experience, and responsive design.',
+            '"The Movie Selector" is a dynamic web application that allows users to explore movies, search by title, filter by genre, and view detailed information about each movie. The project is powered by The Movie Database (TMDB) API and emphasizes asynchronous operations, user experience, and responsive design.',
     },
     {
         pageLink: 'https://github.com/Rhibro/trip-planner-routes/tree/main',

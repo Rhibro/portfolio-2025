@@ -13,12 +13,13 @@ export default function About() {
             <section className="aboutInfoBox">
                 <img className="myFace" src={me} alt="my face smiling" />
                 <p className="aboutInfo">
-                Originally from Toronto, Canada I've lived in Malmö, Sweden for 5+ years.
-                I am currently a student at Chas Academy studying Fullstack-Development. The course 
-                is two years with the goal of proficiency in web development with a particular focus on Javascript,
-                and Typescript. I have a special interest in accessible design because I feel the whole purpose of 
-                technology is to make the world as accessible as possible for everyone. I’m looking for opportunities
-                where I can learn and develop new skills.    
+                Originally from Toronto, Canada; I’ve always had a love for travel. After many adventures, 
+                I’ve settled in Malmö, Sweden for the past six years. I am currently a student at 
+                Chas Academy completeing their 2-year Fullstack-Development course. At the time of my graduation (June 2026)
+                I will be proficient in web development with a particular focus on Javascript, and Typescript. 
+                I have a strong interest in accessible design, driven by my belief that technology should make 
+                the world more inclusive for everyone. I’m eager to explore new opportunities, apply and expand my 
+                skills, and continue learning to make a meaningful impact.
                 </p>
             </section>
         </div>
