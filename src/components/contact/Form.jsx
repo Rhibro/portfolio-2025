@@ -6,7 +6,7 @@ function Form(){
     return (
         <div className="myForm">
             <section className="contactInfoList">
-                <img className="aboutMeimg" src={aboutMe}></img>
+                <img className="aboutMeimg" src={aboutMe} alt="me standing and smiling with colourful flowers behind me on a sunny day" ></img>
                 <p className="formText">Based in Malmö, Sweden</p>
                 <p className="email"><a href="mailto:rhibron@gmail.com">Email Me</a></p>
                 <p className="formText">Connect with me:</p>

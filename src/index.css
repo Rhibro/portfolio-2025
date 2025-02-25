@@ -173,6 +173,10 @@ li {
   color: #000000;
   margin: 1rem;
   text-align: center;
+  padding: .5rem;
+  border-radius: 20px;
+  background-color: #ffffff8f;
+  border: 5px solid black;
 }
 
 /* Education Styles */

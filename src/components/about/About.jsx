@@ -11,7 +11,7 @@ export default function About() {
                 <h1>About</h1>
             </div>
             <section className="aboutInfoBox">
-                <img className="myFace" src={me} alt="my face smiling" />
+                <img className="myFace" src={me} alt="me standing and smiling with an old harbour behind me on a sunny day" />
                 <p className="aboutInfo">
                 Originally from Toronto, Canada; I’ve always had a love for travel. After many adventures, 
                 I’ve settled in Malmö, Sweden for the past six years. I am currently a student at 
