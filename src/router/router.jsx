@@ -5,6 +5,7 @@ import About from '../components/about/About';
 import Education from '../components/education/Education';
 import Portfolio from '../components/portfolio/Portfolio';
 import Contact from '../components/contact/Contact';
+import NotFound from '../components/NotFound';
 
 const router = createBrowserRouter([
     {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
     {
         path: '/contact',
         element: <Contact />,
+    },
+    {
+        path: '/notfound',
+        element: <NotFound />,
     },
 ]);
 
