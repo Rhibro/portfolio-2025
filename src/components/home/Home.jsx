@@ -5,24 +5,29 @@ import briefcase from "../../assets/briefcase.svg";
 import chat from "../../assets/chat.svg";
 
 export default function Home() {
+
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+    
     return (
          <div className='homeBody'>
               <h1 className='homeName'>Rhiannon Brönnimann</h1>
               <h2 className='homeTitle'>Full Stack Developer</h2>
               <main>
-                <Link to="/about" >
+                <Link to="/about" onClick={scrollToTop} >
                     <img src={game} height={230} width={230} className="img-fluid About" alt='game controller icon' />
                     <h3>About</h3>
                 </Link>
-                <Link to="/education" >
+                <Link to="/education" onClick={scrollToTop} >
                     <img src={notebook} height={230} width={230} className="img-fluid Education" alt='notebook icon' />
                     <h3>Education</h3>
                 </Link>
-                <Link to="/portfolio" >
+                <Link to="/portfolio" onClick={scrollToTop} >
                     <img src={briefcase} height={230} width={230} className="img-fluid Portfolio" alt='breifcase icon' />
                     <h3>Portfolio</h3>
                 </Link>
-                <Link to="/contact" >
+                <Link to="/contact" onClick={scrollToTop} >
                     <img src={chat} height={230} width={230} className="img-fluid Contact" alt='speech bubble icon' />   
                     <h3>Contact</h3>
                 </Link>
