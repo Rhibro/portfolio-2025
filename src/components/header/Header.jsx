@@ -9,6 +9,11 @@ export default function Header() {
         setIsMenuOpen(!isMenuOpen);
     };
 
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        setIsMenuOpen(false); // Close the menu after clicking
+    };
+
     // Close the menu when clicking outside of it
     useEffect(() => {
         const handleClickOutside = (event) => {
@@ -35,11 +40,11 @@ export default function Header() {
                 <div className={`line ${isMenuOpen ? 'open' : ''}`}></div>
             </div>
             <ul className={`menu ${isMenuOpen ? 'open' : ''}`} ref={menuRef}>
-                <li><Link className="liLink" to="/">Home</Link></li>
-                <li><Link className="liLink" to="/about">About</Link></li>
-                <li><Link className="liLink" to="/education">Education</Link></li>
-                <li><Link className="liLink" to="/portfolio">Portfolio</Link></li>
-                <li><Link className="liLink" to="/contact">Contact</Link></li>
+                <li><Link className="liLink" to="/" onClick={scrollToTop}>Home</Link></li>
+                <li><Link className="liLink" to="/about" onClick={scrollToTop}>About</Link></li>
+                <li><Link className="liLink" to="/education" onClick={scrollToTop}>Education</Link></li>
+                <li><Link className="liLink" to="/portfolio" onClick={scrollToTop}>Portfolio</Link></li>
+                <li><Link className="liLink" to="/contact" onClick={scrollToTop}>Contact</Link></li>
             </ul>
         </nav>
     );

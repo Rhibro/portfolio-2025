@@ -454,6 +454,25 @@ border-radius: 20px;
 padding: .5rem;
 }
 
+/* Not Found Styles */
+
+.notFoundBody {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.headerNF {
+  margin: 1rem;
+}
+
+.imgNF {
+  margin: 1rem;
+}
+
+.mesNF {
+  margin: 1rem;
+}
 
 /* Responsiveness */
 
