@@ -1,6 +1,7 @@
 import github from "../../assets/github.png";
 import linkedin from "../../assets/linkedin.png";
 import aboutMe from "../../assets/aboutMe.jpg";
+import EmailButton from "./EmailButton";
 
 function Form(){
     return (
@@ -8,6 +9,7 @@ function Form(){
             <section className="contactInfoList">
                 <img className="aboutMeimg" src={aboutMe} loading="lazy" alt="me standing and smiling with colourful flowers behind me on a sunny day" ></img>
                 <p className="formText">Based in Malmö, Sweden</p>
+                {/* <EmailButton /> */}
                 <p className="email"><a href="mailto:rhibron@gmail.com">Email Me</a></p>
                 <p className="formText">Connect with me:</p>
             </section>
