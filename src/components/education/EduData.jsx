@@ -1,4 +1,20 @@
 export const EduData = [
+     {
+        schoolName: 'E.ON - Sverige',
+        course: 'Full Stack Developer Intern',
+        timePlace: 'Nov 2025 - April 2026 || Malmö, Sweden',
+        description: 
+            'Worked on an internal project to streamline the transfer of planned outage data to Svenska kraftnät. Contributed across both frontend and backend,  improving the efficiency and reliability of data handling. On the frontend, built and maintained features using React, TypeScript, Vite, Zustand, Tailwind, and shadcn, integrating APIs and streamlining the overall user experience. Also contributed to backend tasks using C# and .NET, supporting data processing and system integration. ',
+        schoolLink: 'https://www.eon.se/',
+    },
+     {
+        schoolName: 'PluvioFlow',
+        course: 'Front End Developer',
+        timePlace: 'Aug 2025 - Present || Lund, Sweden',
+        description: 
+            'Worked on the company’s production website, focusing on improving overall structure, user flow, and frontend implementation. Contributed to creating a more intuitive and cohesive user experience across the site. Continuing collaboration through my final exam project (May–June), where I will be helping design and build an error reporting pipeline to improve system monitoring and debugging. ',
+        schoolLink: 'https://www.pluvioflow.com/',
+    },
     {
         schoolName: 'Chas Academy',
         course: 'Full Stack Development',

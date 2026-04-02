@@ -8,7 +8,7 @@ export default function Education() {
         <>
         <Header />
         <div className="eduBody"> 
-            <h1>Education</h1>
+            <h1>Experience</h1>
             <div className="eduInfoBox">
                 {EduData.map((edItem) => <EduDataComponent key={edItem.schoolName} {...edItem}/>)}
             </div>

@@ -39,14 +39,14 @@ h1 {
   font-family: 'Roboto Mono', monospace;
   font-style: normal;
   font-weight: 400;
-  font-size: 70px;
+  font-size: 80px;
 }
 
 h2 {
   font-family: 'Roboto Mono', monospace;
   font-style: normal;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 50px;
 }
 
 h3 {
@@ -54,6 +54,13 @@ h3 {
   font-style: normal;
   font-weight: 400;
   font-size: 35px;
+}
+
+h4 {
+  font-family: 'Roboto Mono', monospace;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
 }
 
 /* Header styles */
@@ -127,6 +134,11 @@ li {
 
 .homeBody {
   padding: 3rem;
+}
+
+.homeParagraph {
+  margin-top: 2rem;
+  max-width: 900px;
 }
 
 /* about styles */
@@ -206,6 +218,8 @@ li {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  
 }
 
 .eduBox {
@@ -215,12 +229,23 @@ li {
   border-radius: 20px;
   margin: .5rem;
   display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-direction: column;
+  max-width: 900px;
+  min-height: 400px;
+}
+
+.eduHeader {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  max-width: 500px;
-  min-height: 500px;
+  width: 100%;
+}
 
+.schoolName {
+  margin: 1rem;
 }
 
 .courseName {
@@ -231,6 +256,7 @@ li {
   line-height: 30px;
   text-align: center;
   color: #000000;
+ 
 }
 
 .timePlace {
@@ -251,12 +277,21 @@ li {
   line-height: 25px;
   text-align: center;
   color: #000000;
-  margin: .5rem;
+  margin: 1rem;
   padding: .5rem;
   border-radius: 20px;
   background-color: #ffffff8f;
   max-width: 800px;
-  border: solid 5px #E24F32;
+  border: solid 5px #E24F32; 
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.eduInfo li {
+  text-align: left;
+  margin-bottom: 0.5rem;
+  list-style-type: disc;
 }
 
 .schoolLink {
@@ -267,7 +302,6 @@ li {
   line-height: 26px;
   text-align: center;
   color: #000000;
-  /* margin-bottom: 2rem; */
   padding: .5rem;
 }
 

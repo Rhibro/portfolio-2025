@@ -42,7 +42,7 @@ export default function Header() {
             <ul className={`menu ${isMenuOpen ? 'open' : ''}`} ref={menuRef}>
                 <li><Link className="liLink" to="/" onClick={scrollToTop}>Home</Link></li>
                 <li><Link className="liLink" to="/about" onClick={scrollToTop}>About</Link></li>
-                <li><Link className="liLink" to="/education" onClick={scrollToTop}>Education</Link></li>
+                <li><Link className="liLink" to="/education" onClick={scrollToTop}>Experience</Link></li>
                 <li><Link className="liLink" to="/portfolio" onClick={scrollToTop}>Portfolio</Link></li>
                 <li><Link className="liLink" to="/contact" onClick={scrollToTop}>Contact</Link></li>
             </ul>

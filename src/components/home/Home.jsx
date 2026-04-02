@@ -14,6 +14,9 @@ export default function Home() {
          <div className='homeBody'>
               <h1 className='homeName'>Rhiannon Brönnimann</h1>
               <h2 className='homeTitle'>Full Stack Developer</h2>
+             <div className='homeParagraph'>
+                 <h4>I build with React, TypeScript, Node.js, and SQL, supported by modern CI/CD workflows, DevOps practices, and a focus on performance and accessibility.</h4>
+             </div>
               <main>
                 <Link to="/about" onClick={scrollToTop} >
                     <img src={game} height={230} width={230} className="img-fluid About" alt='game controller icon' />
@@ -21,7 +24,7 @@ export default function Home() {
                 </Link>
                 <Link to="/education" onClick={scrollToTop} >
                     <img src={notebook} height={230} width={230} className="img-fluid Education" alt='notebook icon' />
-                    <h3>Education</h3>
+                    <h3>Experience</h3>
                 </Link>
                 <Link to="/portfolio" onClick={scrollToTop} >
                     <img src={briefcase} height={230} width={230} className="img-fluid Portfolio" alt='breifcase icon' />
