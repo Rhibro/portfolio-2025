@@ -165,7 +165,7 @@ li {
   justify-content: center;
   align-items: center;
   margin: .5rem;
-  max-width: 500px;
+  max-width: 800px;
 }
 
 .myFace {
@@ -184,11 +184,15 @@ li {
   line-height: 33px;
   color: #000000;
   margin: 1rem;
-  text-align: center;
+  text-align: left;
   padding: .5rem;
   border-radius: 20px;
   background-color: #ffffff8f;
   border: 5px solid black;
+}
+
+.aboutText {
+  margin-bottom: 1.5rem;
 }
 
 /* Education Styles */
@@ -421,23 +425,177 @@ li {
 .portInfoBox {
 display: flex;
 flex-wrap: wrap;
+flex-direction: column;
 justify-content: center;
 align-items: center;
 margin: 2rem;
 }
 
+/* #C89005 */
 .portBox {
-background: #C89005;
+background: #f1c75d;
 border: 5px solid #000000;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border-radius: 20px;
 margin: .5rem;
 display: flex;
+justify-content: flex-start;
+align-items: stretch;
+flex-direction: column;
+cursor: pointer;
+transition: max-width 0.3s ease, min-height 0.3s ease;
+}
+
+.portBox.collapsed {
+max-width: 300px;
+min-height: auto;
+}
+
+.portBox.expanded {
+max-width: 500px;
+min-height: 600px;
+}
+
+.portHeader {
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+padding: 1.5rem 1.5rem 1rem 1.5rem;
+border-bottom: 2px solid #000000;
+transition: border-bottom 0.3s ease;
+}
+
+.portBox.collapsed .portHeader {
+border-bottom: none;
+padding: 1rem 1.5rem;
+}
+
+.portImageContainer {
+display: flex;
+justify-content: center;
+width: 100%;
+}
+
+.portTitleSection {
+display: flex;
+flex-direction: column;
 justify-content: center;
 align-items: center;
-flex-direction: column;
-max-width: 400px;
+width: 100%;
+margin-top: 1rem;
+}
 
+.expandIcon {
+font-size: 12px;
+color: #000000;
+margin-top: 0.5rem;
+transition: transform 0.3s ease;
+}
+
+.projectType {
+font-family: 'Roboto Mono';
+font-size: 12px;
+font-weight: 600;
+color: #ffffff;
+background: #000000;
+padding: 0.4rem 0.8rem;
+border-radius: 15px;
+margin-top: 0.5rem;
+}
+
+.portContent {
+display: flex;
+flex-direction: column;
+padding: 1.5rem;
+overflow-y: auto;
+flex: 1;
+}
+
+.portSection {
+margin-bottom: 1.5rem;
+}
+
+.portSection h3 {
+font-family: 'Roboto Mono';
+font-weight: 700;
+font-size: 14px;
+margin-bottom: 0.8rem;
+color: #000000;
+text-transform: uppercase;
+}
+
+.portSection p {
+font-family: 'Roboto Mono';
+font-size: 13px;
+line-height: 1.6;
+color: #000000;
+text-align: left;
+}
+
+.portList {
+/* list-style-position: inside; */
+font-family: 'Roboto Mono';
+font-size: 13px;
+line-height: 1.5;
+color: #000000;
+margin: 0;
+padding: 0.5rem 0;
+display: flex;
+flex-direction: column;
+text-align: left;
+}
+
+.portList li {
+margin-bottom: 0.8rem;
+list-style-type: disc;
+margin-left: 1.5rem;
+padding-left: 0.5rem;
+}
+
+.techTags {
+display: flex;
+flex-wrap: wrap;
+gap: 0.6rem;
+}
+
+.techTag {
+background: #000000;
+color: #ffffff;
+font-family: 'Roboto Mono';
+font-size: 12px;
+font-weight: 600;
+padding: 0.4rem 0.8rem;
+border-radius: 15px;
+display: inline-block;
+}
+
+.portLink {
+display: flex;
+justify-content: center;
+margin-top: auto;
+padding-top: 1rem;
+border-top: 2px solid #000000;
+}
+
+.btn {
+background: #000000;
+color: #ffffff;
+text-decoration: none;
+padding: 0.8rem 1.6rem;
+border-radius: 10px;
+font-family: 'Roboto Mono';
+font-weight: 700;
+font-size: 14px;
+cursor: pointer;
+transition: all 0.3s ease;
+border: 2px solid #000000;
+}
+
+.btn:hover {
+background: #ffffff;
+color: #000000;
+border: 2px solid #000000;
 }
 
 .webEx {
@@ -447,10 +605,14 @@ margin: .8rem;
 margin-top: 2rem;
 border: 2px solid black;
 border-radius: 2%;
+transition: width 0.3s ease, height 0.3s ease;
 }
 
-.webEx:hover {
-  border: 2px solid white;
+.portBox.collapsed .webEx {
+width: 250px;
+height: 150px;
+margin: 0.5rem;
+margin-top: 1rem;
 }
 
 .content {
@@ -469,6 +631,12 @@ line-height: 35px;
 text-align: center;
 color: #000000;
 margin: .8rem;
+transition: font-size 0.3s ease;
+}
+
+.portBox.collapsed .projectName {
+font-size: 20px;
+margin: 0.5rem;
 }
 
 .portInfo {
@@ -572,6 +740,28 @@ padding: .5rem;
 
   .portInfo {
     padding: .1rem;
+  }
+
+  .portBox {
+    max-width: 90vw;
+    min-height: auto;
+  }
+
+  .portBox.expanded {
+    max-width: 90vw;
+  }
+
+  .portContent {
+    padding: 1rem;
+  }
+
+  .portSection h3 {
+    font-size: 12px;
+  }
+
+  .portSection p,
+  .portList {
+    font-size: 12px;
   }
 
 }
