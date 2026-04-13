@@ -12,7 +12,10 @@ export default function About() {
                 <h1>About</h1>
             </div>
             <section className="aboutInfoBox">
-                <img className="myFace" src={AboutMeImg} loading="lazy" alt="me standing and smiling with an old harbour behind me on a sunny day" />
+                <div className="aboutImgBox">
+                    <img className="myFace" src={AboutMeImg} loading="lazy" alt="me standing and smiling with an old harbour behind me on a sunny day" />
+                    <p className='aboutParagraph'>I build with React, TypeScript, Node.js, and SQL, supported by modern CI/CD workflows, DevOps practices, and a focus on performance and accessibility.</p>
+                </div>
                 <section className="aboutInfo">
                     <p className="aboutText">
                         I’m a full-stack developer with a strong focus on frontend development, building clean, user-friendly web applications with modern technologies.

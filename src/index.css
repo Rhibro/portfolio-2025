@@ -136,11 +136,6 @@ li {
   padding: 3rem;
 }
 
-.homeParagraph {
-  margin-top: 2rem;
-  max-width: 900px;
-}
-
 /* about styles */
 
 .aboutBody {
@@ -166,6 +161,24 @@ li {
   align-items: center;
   margin: .5rem;
   max-width: 800px;
+}
+
+.aboutImgBox {
+  display: flex;
+  margin: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem
+}
+
+.aboutParagraph {
+  max-width: 400px;
+  font-weight: 600;
+  font-family: 'Roboto Mono';
+  font-style:  italic;
+  font-size: 1.2rem;
+  line-height: 33px;
+  color: #000000;
 }
 
 .myFace {
@@ -875,5 +888,17 @@ padding: .5rem;
 
   .line.open {
       background-color: #3c3d3d;; /* Change color when open */
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutImgBox {
+    flex-direction: column;
+  }
+
+  .myFace {
+    width: 12rem;
+    height: 12rem;
+    margin-bottom: 1rem;
   }
 }
