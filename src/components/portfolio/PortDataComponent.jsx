@@ -43,19 +43,19 @@ export default function PortDataComponent({
                 <div className="portContent">
                     <div className="portSection">
                         <h3>Overview</h3>
-                        <p>{overview}</p>
+                        <p className="bg">{overview}</p>
                     </div>
 
                     <div className="portSection">
                         <h3>Problem</h3>
-                        <p>{problem}</p>
+                        <p className="bg">{problem}</p>
                     </div>
 
                     <div className="portSection">
                         <h3>Role & Responsibilities</h3>
                         <ul className="portList">
                             {role.map((item, index) => (
-                                <li key={index}>{item}</li>
+                                <li className="bg" key={index}>{item}</li>
                             ))}
                         </ul>
                     </div>
@@ -73,7 +73,7 @@ export default function PortDataComponent({
                         <h3>Challenges</h3>
                         <ul className="portList">
                             {challenges.map((item, index) => (
-                                <li key={index}>{item}</li>
+                                <li key={index} className="bg">{item}</li>
                             ))}
                         </ul>
                     </div>
@@ -82,7 +82,7 @@ export default function PortDataComponent({
                         <h3>Solution</h3>
                         <ul className="portList">
                             {solution.map((item, index) => (
-                                <li key={index}>{item}</li>
+                                <li key={index} className="bg">{item}</li>
                             ))}
                         </ul>
                     </div>
@@ -91,14 +91,14 @@ export default function PortDataComponent({
                         <h3>Results</h3>
                         <ul className="portList">
                             {result.map((item, index) => (
-                                <li key={index}>{item}</li>
+                                <li key={index} className="bg">{item}</li>
                             ))}
                         </ul>
                     </div>
 
                     <div className="portSection">
                         <h3>Next Steps</h3>
-                        <p>{nextSteps}</p>
+                        <p className="bg">{nextSteps}</p>
                     </div>
 
                     <div className="portSection portLink">

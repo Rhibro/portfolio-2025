@@ -14,7 +14,7 @@ export default function About() {
             <section className="aboutInfoBox">
                 <div className="aboutImgBox">
                     <img className="myFace" src={AboutMeImg} loading="lazy" alt="me standing and smiling with an old harbour behind me on a sunny day" />
-                    <p className='aboutParagraph'>I build with React, TypeScript, Node.js, and SQL, supported by modern CI/CD workflows, DevOps practices, and a focus on performance and accessibility.</p>
+                    <p className='aboutParagraph'>I build with React, TypeScript, Node.js, and SQL, supported by modern CI/CD workflows, and a focus on performance and accessibility.</p>
                 </div>
                 <section className="aboutInfo">
                     <p className="aboutText">
